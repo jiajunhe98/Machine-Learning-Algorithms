@@ -1,3 +1,3 @@
 # Machine Learning Algorithms
 
-Implement some algorithms in *python*
+Implement some algorithms in python
