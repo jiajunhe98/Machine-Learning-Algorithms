@@ -9,14 +9,8 @@ Comments and discussion are always highly appreciated :)
 - Perceptron 
 
 
-
-
-
-
-	
-		
-			
-				
+&nbsp;&nbsp;&nbsp;&nbsp;
+          
 
 
 # 《*统计学习方法*》中的机器学习算法
