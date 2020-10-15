@@ -9,10 +9,7 @@ Comments and discussion are always highly appreciated :)
 - Perceptron 
 
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           
 
 
