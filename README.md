@@ -8,8 +8,7 @@ Comments and discussion are always highly appreciated :)
 
 - Perceptron 
 
-<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
-          
+<br/> <br/> <br/> <br/> <br/> <br/> 
 
 
 # 《*统计学习方法*》中的机器学习算法
