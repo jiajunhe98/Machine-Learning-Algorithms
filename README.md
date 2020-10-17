@@ -7,8 +7,8 @@ Comments and discussion are always highly appreciated :)
 ## Algorithms implemented:
 
 - Perceptron 
-- Decision Tree (ID3/C4.5)
-- CART Algorithm: Classification Tree
+- Classification Decision Tree (ID3/C4.5)
+- Classification Tree (CART Algorithm)
 
 <br/> <br/> <br/> 
 
@@ -22,5 +22,5 @@ Comments and discussion are always highly appreciated :)
 ## 算法清单：
 
 - 感知机
-- 决策树（ID3/C4.5）
-- CART算法：分类树
+- 分类决策树（ID3/C4.5）
+- 分类树（CART算法）
