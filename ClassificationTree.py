@@ -250,34 +250,5 @@ class ClassificationTree:
 
 
 
-#x = np.array([[0,0,0,1],[0,0,0,0],[0,1,0,1],[0,1,1,0],[0,0,0,0],[1,0,0,0],[1,0,0,2],[1,1,1,2],[1,0,1,3],[1,0,1,1],[2,0,1,2],[2,0,1,0],[2,1,0,0],[2,1,0,1],[2,0,0,2]])
-#y = np.array([0,0,1,1,0,0,0,1,1,1,1,1,1,1,0])
-#s = ClassificationTree(x,y)
-#print(s.predict(x))
-
-import sklearn.datasets
-import random
-
-
-index = random.sample(list(range(150)),150)
-iris = sklearn.datasets.load_iris()
-iris
-train_data = iris.data[index[:100],:]
-train_y = iris.target[index[:100]]
-
-
-test_data = iris.data[index[100:],:]
-test_y = iris.target[index[100:]]
-
-s = ClassificationTree(train_data, train_y)
-
-print(s.predict(train_data))
-print(train_y)
-
-print(s.predict(test_data))
-print(test_y)
-
-
-
 
 
