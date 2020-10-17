@@ -8,6 +8,7 @@ Comments and discussion are always highly appreciated :)
 
 - Perceptron 
 - Decision Tree (ID3/C4.5/pruning algorithm)
+- CART Algorithm: Classification Tree
 
 <br/> <br/> <br/> 
 
@@ -22,3 +23,4 @@ Comments and discussion are always highly appreciated :)
 
 - 感知机
 - 决策树（ID3/C4.5/剪枝算法）
+- CART算法：分类树
