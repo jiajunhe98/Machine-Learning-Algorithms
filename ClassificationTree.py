@@ -27,8 +27,6 @@ class ClassificationTree:
     Raises:
         'ValueError: Dimension not match': Means either amounts of data in x and y do not match or input data for
                                            prediction have different amount of characters from the training data.
-
-
     """
     class Node:
         """
@@ -62,7 +60,7 @@ class ClassificationTree:
             self.classifier = None  # tuple
             self.label = None
 
-    def __init__(self, x, y, samples_in_leaf = 0, gini_threshold = 0, training_set_ratio = 2/3):
+    def __init__(self, x, y, samples_in_leaf = 1, gini_threshold = 0, training_set_ratio = 2/3):
         """
         Constructor method
         """
@@ -77,7 +75,7 @@ class ClassificationTree:
         self.samples_in_leaf = samples_in_leaf
         self.gini_threshold = gini_threshold
         self.character_num = x.shape[1]
-        self.root = self.Node(None, x, y)
+        self.root = self.Node(None, self.x, self.y)
         self.__node_list = [self.root]
         self.__internal_node_list = []
         while self.__node_list != []:
@@ -246,9 +244,5 @@ class ClassificationTree:
         gini_after_classification = self.__gini(y1) * (len(y1)/len(y)) \
                                     + self.__gini(y2) * (len(y2)/len(y))
         return gini_after_classification
-
-
-
-
 
 
