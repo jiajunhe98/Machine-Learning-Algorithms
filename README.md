@@ -9,6 +9,7 @@ Comments and discussion are always highly appreciated :)
 - Perceptron 
 - Classification Decision Tree (ID3/C4.5)
 - Classification Tree (CART Algorithm)
+- Regression Tree (CART Algorithm)
 
 <br/> <br/> <br/> 
 
@@ -24,3 +25,4 @@ Comments and discussion are always highly appreciated :)
 - 感知机
 - 分类决策树（ID3/C4.5）
 - 分类树（CART算法）
+- 回归树（CART算法）
