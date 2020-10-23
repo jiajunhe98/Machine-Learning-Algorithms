@@ -4,7 +4,7 @@ import math
 class DecisionTree:
     """
     This class implements Decision Tree Algorithm. The Tree can be chosen to construct by ID3 or C4.5 algorithms,
-    and pruning is automatically conducted when each node is classified.
+    and use pre-pruning when each node is classified.
 
     Args:
         x: 2-dimension numpy array, each row contains characters of one sample
@@ -230,5 +230,11 @@ class DecisionTree:
             new_loss -= loss2 * y_i.shape[0] / y.shape[0] - self.alpha
         return -new_loss + loss
 
+
+
+x = np.array([[0,0,0,1],[0,0,0,0],[0,1,0,1],[0,1,1,0],[0,0,0,0],[1,0,0,0],[1,0,0,2],[1,1,1,2],[1,0,1,3],[1,0,1,1],[2,0,1,2],[2,0,1,0],[2,1,0,0],[2,1,0,1],[2,0,0,2]])
+y = np.array([0,0,1,1,0,0,0,1,1,1,1,1,1,1,0])
+s = DecisionTree(x,y)
+print(s.predict(x))
 
 
