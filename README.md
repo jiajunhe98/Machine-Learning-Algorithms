@@ -10,6 +10,7 @@ Comments and discussion are always highly appreciated :)
 - Classification Decision Tree (ID3/C4.5)
 - Classification Tree (CART Algorithm)
 - Regression Tree (CART Algorithm)
+- 1-Dimensional Gaussian Mixture Model (by EM algorithms) 
 
 <br/> <br/> <br/> 
 
@@ -26,3 +27,4 @@ Comments and discussion are always highly appreciated :)
 - 分类决策树（ID3/C4.5）
 - 分类树（CART算法）
 - 回归树（CART算法）
+- 一维高斯混合模型（利用EM算法）
