@@ -153,12 +153,4 @@ class OneDimensionalGaussianMixture:
 
 
 
-x1 = np.random.normal(2,1,100)
-x2 = np.random.normal(0,1,200)
-x3 = np.random.normal(-5,1,400)
-x = np.array(list(x1)+list(x2)+list(x3))
-gm = OneDimensionalGaussianMixture(x,3)
 
-
-gm.get_parameters()
-gm.plot_distributions(True)
