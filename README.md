@@ -10,7 +10,7 @@ Comments and discussion are always highly appreciated :)
 - Classification Decision Tree (ID3/C4.5)
 - Classification Tree (CART Algorithm)
 - Regression Tree (CART Algorithm)
-- Gaussian Mixture Model Clustering(by EM algorithms) 
+- Gaussian Mixture Model Clustering (by EM algorithms) 
 
 <br/> <br/> <br/> 
 
