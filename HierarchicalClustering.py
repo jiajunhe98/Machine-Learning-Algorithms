@@ -103,14 +103,6 @@ class HierarchicalClustering:
 
 
 
-a = np.array([[1,2,2,2],[1,2,1,2],[-1,-1,-2,-3],[-2,-1,-3,-2],[-3,-2,5,6],[-5,-3,6,7]])
-
-
-
-m = HierarchicalClustering(a, 3, "cos", "min")
-print(m.get_labels())
-print(m.classes)
-
 
 
 
