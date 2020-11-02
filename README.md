@@ -11,6 +11,7 @@ Comments and discussion are always highly appreciated :)
 - Classification Tree (CART Algorithm)
 - Regression Tree (CART Algorithm)
 - Gaussian Mixture Model Clustering (by EM algorithms) 
+- Hierarchical Clustering (implementing multiple distances)
 
 <br/> <br/> <br/> 
 
@@ -28,3 +29,4 @@ Comments and discussion are always highly appreciated :)
 - 分类树（CART算法）
 - 回归树（CART算法）
 - 高斯混合模型聚类（利用EM算法）
+- 层次聚类（多种距离下）
