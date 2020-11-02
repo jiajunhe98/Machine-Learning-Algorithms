@@ -103,20 +103,6 @@ class HierarchicalClustering:
 
 
 
-import sklearn.datasets as skd
-import sklearn.preprocessing as sp
-iris = skd.load_iris()
-print(iris.target)
-m = HierarchicalClustering(iris.data, k = 3, distance="C", linkage="central")
-print(m.get_labels())
-
-from sklearn.cluster import AgglomerativeClustering
-x = AgglomerativeClustering(3,linkage="single").fit_predict(iris.data)
-print(x)
-
-
-
-
 
 
 
