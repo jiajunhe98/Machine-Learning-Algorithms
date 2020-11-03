@@ -134,19 +134,3 @@ class PCA:
         return x
 
 
-
-
-
-import sklearn.decomposition
-import sklearn.datasets as skd
-iris = skd.load_iris().data
-pca = sklearn.decomposition.PCA(3)
-pca.fit(iris)
-print(pca.transform(iris)[:10])
-
-
-_pca = PCA(3)
-_pca.fit(iris)
-print(_pca.transform(iris)[:10])
-print(_pca.factor_loading())
-
