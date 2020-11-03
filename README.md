@@ -12,7 +12,7 @@ Comments and discussion are always highly appreciated :)
 - Regression Tree (CART Algorithm)
 - Gaussian Mixture Model Clustering (by EM algorithms) 
 - Hierarchical Clustering (implementing multiple distances: Euclidean/Minkowski/Manhattan/Chebyshev/Manhalanobis/Correlation/Cosine)
-- PCA
+- Principle Component Analysis
 
 <br/> <br/> <br/> 
 
