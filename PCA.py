@@ -150,22 +150,3 @@ class PCA:
         return x
 
 
-
-
-
-import sklearn.decomposition
-import sklearn.datasets as skd
-iris = skd.load_iris().data
-pca = sklearn.decomposition.PCA(3)
-pca.fit(iris)
-
-
-_pca = PCA(3, whiten = True)
-_pca.fit(iris)
-print(_pca.inverse_transform(_pca.transform(iris)[:10]))
-print(iris[:10])
-#print(_pca.factor_loading())
-
-a = _pca.components
-b = np.dot(a.T, a)
-#print(b)
