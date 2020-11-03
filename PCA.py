@@ -72,7 +72,7 @@ class PCA:
             array of data represented bt the principal components.
         """
 
-        x = self.__check_x(x)
+        x = self.__check_x(x) - self.mean
         res = np.dot(x, self.components.T) if self.whiten == False \
             else (self.x.shape[0]-1)**0.5 * np.dot(x, self.components.T) / self.singular_values
         return res
@@ -103,7 +103,7 @@ class PCA:
             data in original space.
         """
         x *= self.singular_values / (self.x.shape[0] - 1) ** 0.5 if self.whiten else 1
-        return np.dot(x, self.components)
+        return np.dot(x, self.components) + self.mean
 
 
     def factor_loading(self):
@@ -148,5 +148,3 @@ class PCA:
         if self.k != None and x.shape[1] < self.k: raise ValueError("Dimension should not be smaller than k.")
         if self.x.shape[1] != x.shape[1]: raise  ValueError("Dimension not match.")
         return x
-
-
