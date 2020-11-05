@@ -7,13 +7,18 @@ Comments and discussion are always highly appreciated :)
 ## Algorithms implemented:
 
 <br/>
+
 ### Supervised Learning
+
 - Perceptron 
 - Classification Decision Tree (ID3/C4.5)
 - Classification Tree (CART Algorithm)
 - Regression Tree (CART Algorithm)
+
 <br/>
+
 ### Unsupervised Learning
+
 - KMeans Clustering
 - Gaussian Mixture Model Clustering (by EM algorithms) 
 - Hierarchical Clustering (implementing multiple distances: Euclidean/Minkowski/Manhattan/Chebyshev/Manhalanobis/Correlation/Cosine)
