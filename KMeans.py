@@ -128,15 +128,3 @@ class KMeans:
             labels[mask] = i
             distance[mask] = current_distance[mask]
         return labels
-
-
-from sklearn.datasets import load_iris
-
-iris = load_iris().data
-km = KMeans(3, 10)
-print(km.fit_predict(iris, 1000))
-
-import sklearn.cluster
-
-km = sklearn.cluster.KMeans(3, random_state=1)
-print(km.fit_predict(iris))
