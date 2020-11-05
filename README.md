@@ -7,7 +7,7 @@ Comments and discussion are always highly appreciated :)
 ## Algorithms implemented:
 
 
-### Supervised Learning
+#### Supervised Learning
 
 - Perceptron 
 - Classification Decision Tree (ID3/C4.5)
@@ -16,7 +16,7 @@ Comments and discussion are always highly appreciated :)
 
 
 
-### Unsupervised Learning
+#### Unsupervised Learning
 
 - KMeans Clustering
 - Gaussian Mixture Model Clustering (by EM algorithms) 
@@ -34,14 +34,14 @@ Comments and discussion are always highly appreciated :)
 
 ## 算法清单：
 
-### 监督学习
+#### 监督学习
 
 - 感知机
 - 分类决策树（ID3/C4.5）
 - 分类树（CART算法）
 - 回归树（CART算法）
 
-### 无监督学习
+#### 无监督学习
 
 - K均值聚类
 - 高斯混合模型聚类（利用EM算法）
