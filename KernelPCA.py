@@ -119,7 +119,7 @@ class KernelPCA(object):
         if self.kernel == "linear":
             res = np.dot(x, y.T)
         if self.gamma is None:
-            self.gamma = self.x.shape[1]
+            self.gamma = 1 / self.x.shape[1]
         if self.kernel == "poly":
             res = np.dot(x, y.T) * self.gamma + self.c
             res = res ** self.degree
