@@ -155,21 +155,3 @@ class BinaryClassificationSVM(object):
         return np.reshape(res, [x.shape[0], y.shape[0]])  # in case that x/y contains only one data.
 
 
-svm = BinaryClassificationSVM(C=0.5, kernel="poly")
-import sklearn.datasets as skd
-from sklearn.model_selection import train_test_split
-
-mask = np.any(np.vstack((skd.load_digits().target == 0, skd.load_digits().target == 5)), axis=0)
-
-iris = skd.load_digits().target[mask]
-iris[iris == 0] = -1
-iris[iris == 5] = 1
-data = skd.load_digits().data[mask]
-
-X_train, X_test, y_train, y_test = train_test_split(
-    data, iris, test_size=0.4, shuffle=True)
-
-svm.fit(X_train, y_train)
-print(svm.predict(X_test) == y_test)
-
-
