@@ -13,7 +13,7 @@ Comments and discussion are always highly appreciated :)
 - Classification Decision Tree (ID3/C4.5)
 - Classification Tree (CART Algorithm)
 - Regression Tree (CART Algorithm)
-- Binary Classification SVM
+- Support Vector Machine (SMO Algorithm)
 
 
 
@@ -42,7 +42,7 @@ Comments and discussion are always highly appreciated :)
 - 分类决策树（ID3/C4.5）
 - 分类树（CART算法）
 - 回归树（CART算法）
-- 二分类支持向量机
+- 支持向量机（SMO算法）
 
 #### 无监督学习
 
