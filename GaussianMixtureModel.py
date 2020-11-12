@@ -56,7 +56,7 @@ class GaussianMixtureModel:
         if x.ndim == 0 and self.dimension == 1: x = np.reshape(x, [1,1])           # characteristic space is 1D, x contains 1 data
         res = np.zeros(x.shape[0])
         for i in range(self.k):
-            prob = self.__gaussian_prob(x, self.mu[i], self.sigma[i])
+            prob = self.__gaussian_prob(x, self.mu[i], self.sigma[i]) + self.alpha[i]
             res = np.vstack((res, prob))
         res = res[1:,:]
         return np.argmax(res, axis = 0)
