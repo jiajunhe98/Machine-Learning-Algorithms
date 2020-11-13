@@ -1,5 +1,6 @@
 import numpy as np
 import math
+import KMeans
 
 class GaussianMixtureModel:
     """
@@ -119,47 +120,16 @@ class GaussianMixtureModel:
 
     def __initialization(self):
         """
-        Initialization all parameters, usually by k-means, this function will be finished after implement k-means.
+        Initialization all parameters by k-means.
 
         Returns:
             Initial mu, sigma, gamma
         """
-        x_max = np.max(self.x, axis = 0)
-        x_min = np.min(self.x, axis = 0)
+        km = KMeans.KMeans(self.k)
+        labels = km.fit_predict(self.x, 50)
+        mu = np.array([np.average(self.x[labels == i], axis=0) for i in range(self.k)])
         sigma = np.array([np.eye(self.dimension) + 1 for i in range(self.k)])
-        mu = np.array([(x_max + x_min) * i / self.k for i in range(self.k)])
         gamma = np.array([[-math.log(self.k, math.e)] * self.k] * self.x.shape[0])
         return mu, sigma, gamma
-
-
-
-
-
-
-
-# test
-"""
-x1 = np.random.multivariate_normal([0, 0, 0], [[1, 0, 0],[0, 1, 0], [0, 0, 2]], 100)
-x2 = np.random.multivariate_normal([-4, -4, -4], [[2, 1, 1],[1, 2, 1],[1, 1, 3]], 200)
-x3 = np.random.multivariate_normal([4, 2, 3], [[2, 0, 0],[0, 3, 0], [0, 0, 2]], 100)
-x = np.vstack((x1,x2,x3))
-gm = GaussianMixtureModel(x,3)
-predict = gm.predict(x)
-
-import matplotlib.pyplot as plt
-
-from mpl_toolkits.mplot3d import Axes3D
-fig = plt.figure()
-ax = Axes3D(fig)
-ax.scatter(x[predict == 0,0], x[predict == 0,1], x[predict == 0,2])
-ax.scatter(x[predict == 1,0], x[predict == 1,1], x[predict == 1,2])
-ax.scatter(x[predict == 2,0], x[predict == 2,1], x[predict == 2,2])
-plt.show()
-
-"""
-
-
-
-
 
 
