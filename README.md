@@ -21,6 +21,7 @@ Comments and discussion are always highly appreciated :)
 
 - KMeans Clustering
 - Gaussian Mixture Model Clustering (by EM algorithms) 
+- Gaussian Mixture Model Clustering (by Gibbs Sampling) 
 - Hierarchical Clustering (implementing multiple distances: Euclidean/Minkowski/Manhattan/Chebyshev/Manhalanobis/Correlation/Cosine)
 - Principle Component Analysis
 - Kernel PCA
@@ -48,6 +49,7 @@ Comments and discussion are always highly appreciated :)
 
 - K均值聚类
 - 高斯混合模型聚类（利用EM算法）
+- 高斯混合模型聚类（利用Gibbs采样）
 - 层次聚类（实现多种距离：欧氏距离/闵可夫斯基距离/曼哈顿距离/切比雪夫距离/马哈拉诺比斯距离/相关系数相似度/余弦相似度）
 - 主成分分析
 - 核主成分分析
