@@ -108,9 +108,8 @@ class GaussianMixtureModel(object):
         if self.gammas is None: self.gammas = gammas
         if self.psis is None: self.psis = psis
 
-        self.labels = np.random.choice(self.n_clusters, size=self.n_samples, replace=True)
-
-        km = KMeans.KMeans(self.n_clusters)
+        #self.labels = np.random.choice(self.n_clusters, size=self.n_samples, replace=True)
+        km = KMeans.KMeans(self.n_clusters)     # Initialization by K-means.
         self.labels = km.fit_predict(self.data)
 
     def __gaussian(self, x, mu, sigma):
@@ -210,45 +209,5 @@ class GaussianMixtureModel(object):
             labels.append(np.random.choice(self.n_clusters, 1, p=list(prob/ np.sum(prob)))[0])
 
         return np.array(labels)
-
-
-
-
-
-# test
-x1 = np.random.multivariate_normal([0, 0, 0], [[1, 0, 0],[0, 1, 0], [0, 0, 2]], 1000)
-x2 = np.random.multivariate_normal([-1, -2, -1], [[2, 0, 0],[0, 1, 0],[0, 0, 2]], 2000)
-x3 = np.random.multivariate_normal([3, 2, 4], [[2, 0, 0],[0, 3, 0], [0, 0, 2]], 200)
-x = np.vstack((x1,x2,x3))
-gm = GaussianMixtureModel(3)
-gm.fit(x)
-predict = gm.predict(x)
-
-import matplotlib.pyplot as plt
-
-from mpl_toolkits.mplot3d import Axes3D
-fig = plt.figure()
-ax = Axes3D(fig)
-ax.scatter(x[predict == 0,0], x[predict == 0,1], x[predict == 0,2])
-ax.scatter(x[predict == 1,0], x[predict == 1,1], x[predict == 1,2])
-ax.scatter(x[predict == 2,0], x[predict == 2,1], x[predict == 2,2])
-plt.show()
-
-print(predict)
-print(gm.mus_)
-print(gm.alphas_)
-print(gm.sigmas_)
-print(gm.labels)
-
-
-
-
-
-
-
-
-
-
-
 
 
