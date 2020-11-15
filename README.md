@@ -14,6 +14,7 @@ Comments and discussion are always highly appreciated :)
 - Classification Tree (CART Algorithm)
 - Regression Tree (CART Algorithm)
 - Support Vector Machine (SMO Algorithm)
+- Feedforward Neural Network (MLP)
 
 
 
@@ -44,6 +45,7 @@ Comments and discussion are always highly appreciated :)
 - 分类树（CART算法）
 - 回归树（CART算法）
 - 支持向量机（SMO算法）
+- 前馈神经网络（MLP）
 
 #### 无监督学习
 
