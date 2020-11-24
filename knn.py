@@ -25,24 +25,3 @@ def knn(x, dataset, labels, k):
     x_labels = np.take_along_axis(x_labels, x_indices, axis=0)[:k, :]
     res = np.apply_along_axis(lambda y: np.argmax(np.bincount(y.astype(int))), axis=0, arr=x_labels)
     return res
-
-
-import sklearn.datasets as skd
-y = skd.load_iris().target
-x = skd.load_iris().data
-import sklearn.neighbors as kn
-import time
-
-z = np.random.rand(400000).reshape((100000, 4)) * 10
-a = time.time()
-k = kn.KNeighborsClassifier(5)
-k.fit(x, y)
-k.predict(z)
-b = time.time()
-knn(z, x, y, 5)
-c = time.time()
-
-print(c-b)
-print(b-a)
-
-
