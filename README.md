@@ -9,6 +9,7 @@ Comments and discussion are always highly appreciated :)
 
 #### Supervised Learning
 
+- knn
 - Perceptron 
 - Classification Decision Tree (ID3/C4.5)
 - Classification Tree (CART Algorithm)
@@ -40,6 +41,7 @@ Comments and discussion are always highly appreciated :)
 
 #### 监督学习
 
+- k近邻
 - 感知机
 - 分类决策树（ID3/C4.5）
 - 分类树（CART算法）
