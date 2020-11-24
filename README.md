@@ -9,7 +9,7 @@ Comments and discussion are always highly appreciated :)
 
 #### Supervised Learning
 
-- knn
+- k-NN
 - Perceptron 
 - Classification Decision Tree (ID3/C4.5)
 - Classification Tree (CART Algorithm)
