@@ -1,6 +1,8 @@
 # Machine Learning Algorithms
 
-This repository implements some machine learning algorithms and their extensions in *Statistical Learning Methods* by Hang Li and *Machine Learning* by Zhihua Zhou.
+This repository implements some Classical machine learning algorithms.
+
+Most algotithms come from the book *Statistical Learning Methods* by Hang Li and *Machine Learning* by Zhihua Zhou, there are also some supplements and extensions.
 
 Comments and discussion are always highly appreciated :)
 
@@ -33,7 +35,9 @@ Comments and discussion are always highly appreciated :)
 
 # 机器学习算法
 
-该仓库实现了李航教授《统计学习方法》与周志华教授《机器学习》中的机器学习算法与扩展，
+该仓库实现了一些经典的机器学习算法。
+
+大多数算法来自于李航教授《统计学习方法》和周志华教授《机器学习》，同时也进行了补充和扩展。
 
 欢迎讨论和批评指正！
 
