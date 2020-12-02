@@ -228,7 +228,7 @@ class MLP(object):
 
     def train(self, x, y, max_iteration=200, learning_rate=0.05, batch_size=None, learning_rate_decay=0.):
         """
-        Train the model.
+        Train the model. This function can be executed repeatedly to train a model.
 
         Args:
              x: batch of data input. shape (n_samples, input_dimension)
@@ -298,45 +298,3 @@ class MLP(object):
             i.update(learning_rate)
 
 
-
-
-
-from sklearn.datasets import load_digits
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import Normalizer
-import matplotlib.pyplot as plt
-data = load_digits()
-mask = np.random.rand(data.data.shape[0]) < 0.7
-a = data.data[mask]
-norm = Normalizer().fit(a)
-a = norm.transform(a)
-
-b = OneHotEncoder().fit_transform(data.target[mask].reshape(-1, 1)).toarray()
-mlp = MLP(a.shape[1], b.shape[1], hidden_layer=[50, 10], activation=["relu", "relu"], drop_out=[0.1, 0.], loss="cross_entropy", lambd=0.3, optimize="Adam")
-
-
-costs = []
-for ii in range(100):
-    costs.append(mlp.train(a, b, 1, 0.1))
-for ii in range(50):
-    costs.append(mlp.train(a, b, 1, 0.03))
-for ii in range(100):
-    costs.append(mlp.train(a, b, 1, 0.005))
-costs = [i for j in costs for i in j]
-plt.plot(np.arange(0, len(costs)), costs)
-plt.show()
-
-mask2 = np.random.rand(data.data.shape[0]) >= 0.7
-a1 = data.data[mask2]
-a1 = norm.transform(a1)
-b1 = data.target[mask2]
-
-
-#target_grad, grad = mlp.grad_check(a, b)
-#print("checking: ")
-#print(np.sum((target_grad - grad) ** 2) / grad.shape[0])
-
-print(np.argmax(mlp.predict(a1), axis=1))
-print(b1)
-print(np.sum(np.argmax(mlp.predict(a1), axis=1) == b1) / b1.shape[0])
-print(np.sum(np.argmax(mlp.predict(a), axis=1) == data.target[mask]) / data.target[mask].shape[0])
