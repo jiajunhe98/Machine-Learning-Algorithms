@@ -89,32 +89,3 @@ class GMM(object):
 
 
 
-
-
-# test
-x1 = np.random.multivariate_normal([0, 0, 0], [[1, 0, 0],[0, 1, 0], [0, 0, 2]], 100)
-x2 = np.random.multivariate_normal([-4, -4, -4], [[2, 1, 1],[1, 2, 1],[1, 1, 3]], 200)
-x3 = np.random.multivariate_normal([4, 2, 3], [[2, 0, 0],[0, 3, 0], [0, 0, 2]], 100)
-x = np.vstack((x1,x2,x3))
-gm = GMM(3)
-gm.fit(x)
-
-print(gm.qz)
-
-
-predict = gm.predict(x)
-
-import matplotlib.pyplot as plt
-
-from mpl_toolkits.mplot3d import Axes3D
-fig = plt.figure()
-ax = Axes3D(fig)
-ax.scatter(x[predict == 0,0], x[predict == 0,1], x[predict == 0,2])
-ax.scatter(x[predict == 1,0], x[predict == 1,1], x[predict == 1,2])
-ax.scatter(x[predict == 2,0], x[predict == 2,1], x[predict == 2,2])
-plt.show()
-
-print(predict)
-
-
-
