@@ -2,8 +2,6 @@
 
 This repository implements some Classical machine learning algorithms.
 
-Most algotithms come from the book *Statistical Learning Methods* by Hang Li and *Machine Learning* by Zhihua Zhou, there are also some supplements and extensions, such as implementing GMM by multiple methods.
-
 Comments and discussion are always highly appreciated :)
 
 ## Algorithms implemented:
@@ -38,8 +36,6 @@ Comments and discussion are always highly appreciated :)
 # 机器学习算法
 
 该仓库实现了一些经典的机器学习算法。
-
-大多数算法来自于李航教授《统计学习方法》和周志华教授《机器学习》，同时也进行了补充和扩展，例如多种方式实现了高斯混合模型等。
 
 欢迎讨论和批评指正！
 
