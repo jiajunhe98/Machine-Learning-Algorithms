@@ -35,9 +35,7 @@ Comments and discussion are always highly appreciated :)
 
 # 机器学习算法
 
-该仓库实现了一些经典的机器学习算法。
-
-欢迎讨论和批评指正！
+该仓库实现了一些经典的机器学习算法, 欢迎讨论和批评指正！
 
 ## 算法清单：
 
