@@ -1,6 +1,6 @@
 # Machine Learning Algorithms
 
-This repository implements some Classical machine learning algorithms in Python with NumPy and SciPy.
+This repository implements some Classical machine learning algorithms in Python (with NumPy and SciPy).
 
 Comments and discussion are always highly appreciated :)
 
