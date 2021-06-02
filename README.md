@@ -27,9 +27,10 @@ Comments and discussion are always highly appreciated :)
 - Gaussian Mixture Model Clustering (by Gibbs Sampling) 
 - Gaussian Mixture Model Clustering (by Variational Inference)
 - Hierarchical Clustering (implementing multiple distances: Euclidean/Minkowski/Manhattan/Chebyshev/Manhalanobis/Correlation/Cosine)
-- Principle Component Analysis(PCA)
+- Principle Component Analysis
 - Kernel PCA
 - Probabilistic PCA(Number of PCs are automatically determined by ARD prior)
+- Factor Analysis
 
 <br/> <br/> <br/> 
 
@@ -60,5 +61,6 @@ Comments and discussion are always highly appreciated :)
 - 主成分分析
 - 核主成分分析
 - 概率主成分分析（利用ARD先验自动确定主成分数量）
+- 因子分析
 
 <br/> <br/> <br/> 
