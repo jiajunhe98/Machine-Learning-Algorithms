@@ -61,6 +61,6 @@ Comments and discussion are always highly appreciated :)
 - 主成分分析
 - 核主成分分析
 - 概率主成分分析（利用ARD先验自动确定主成分数量）
-- 因子分析（待更新）
+- 因子分析
 
 <br/> <br/> <br/> 
