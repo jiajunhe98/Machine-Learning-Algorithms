@@ -52,7 +52,7 @@ Comments and discussion are always highly appreciated :)
 #### 无监督学习
 
 - K均值聚类
-- 高斯混合模型聚类（利用EM算法/Gibbs采/变分推断）(更多方法见[此仓库](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models))
+- 高斯混合模型聚类（利用EM算法/Gibbs采样/变分推断）(更多方法见[此仓库](https://github.com/hejj16/Probabilistic-Graphical-Models-and-Gaussian-Mixture-Models))
 - 层次聚类（实现多种距离：欧氏距离/闵可夫斯基距离/曼哈顿距离/切比雪夫距离/马哈拉诺比斯距离/相关系数相似度/余弦相似度）
 - 主成分分析
 - 核主成分分析
