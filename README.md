@@ -28,7 +28,7 @@ Comments and discussion are always highly appreciated :)
 - Principle Component Analysis
 - Kernel PCA
 - Probabilistic PCA(Number of PCs are automatically determined by ARD prior)
-- Factor Analysis
+- Factor Analysis(Linear Gaussian Model with anisotropic variances)
 
 <br/> <br/> <br/> 
 
@@ -57,6 +57,6 @@ Comments and discussion are always highly appreciated :)
 - 主成分分析
 - 核主成分分析
 - 概率主成分分析（利用ARD先验自动确定主成分数量）
-- 因子分析
+- 因子分析（各向异性方差线性高斯模型）
 
 <br/> <br/> <br/> 
