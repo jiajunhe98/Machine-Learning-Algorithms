@@ -61,11 +61,11 @@ class PPCA:
         return Z
 
 
-z = np.random.randn(1500, 5)
-W = np.random.randn(100, 5) * 20
-mu = np.random.rand(100) * 10
-data = z @ W.T + mu + np.random.randn(100)
+# z = np.random.randn(1500, 5)
+# W = np.random.randn(100, 5) * 20
+# mu = np.random.rand(100) * 10
+# data = z @ W.T + mu + np.random.randn(100)
 
-ppca = PPCA().fit(data, random_state=42)
-print(ppca.latent_dim)
-print(ppca.alpha)
+# ppca = PPCA().fit(data, random_state=42)
+# print(ppca.latent_dim)
+# print(ppca.alpha)
