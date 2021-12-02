@@ -29,7 +29,7 @@ Comments and discussion are always highly appreciated :)
 - Kernel PCA
 - Factor Analysis(Linear Gaussian Model with anisotropic variances)
 - Probabilistic PCA(Number of PCs are automatically determined by ARD prior)
-- PPCA by Pyro(Illustrated in Jupyter Notebook)
+- [PPCA by Pyro(Illustrated in Jupyter Notebook)](https://github.com/hejj16/Machine-Learning-Algorithms/blob/main/PPCA.ipynb)
 <br/> <br/> <br/> 
 
 
@@ -58,6 +58,6 @@ Comments and discussion are always highly appreciated :)
 - 核主成分分析
 - 因子分析（各向异性方差线性高斯模型）
 - 概率主成分分析（利用ARD先验自动确定主成分数量）
-- Pyro实现的概率主成分分析(Jupyter Notebook)
+- [Pyro实现的概率主成分分析(Jupyter Notebook)](https://github.com/hejj16/Machine-Learning-Algorithms/blob/main/PPCA.ipynb)
 
 <br/> <br/> <br/> 
