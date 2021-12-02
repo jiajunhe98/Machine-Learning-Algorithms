@@ -27,9 +27,9 @@ Comments and discussion are always highly appreciated :)
 - Hierarchical Clustering (implementing multiple distances: Euclidean/Minkowski/Manhattan/Chebyshev/Manhalanobis/Correlation/Cosine)
 - Principle Component Analysis
 - Kernel PCA
-- Probabilistic PCA(Number of PCs are automatically determined by ARD prior)
 - Factor Analysis(Linear Gaussian Model with anisotropic variances)
-
+- Probabilistic PCA(Number of PCs are automatically determined by ARD prior)
+- PPCA by Pyro(Illustrated in Jupyter Notebook)
 <br/> <br/> <br/> 
 
 
